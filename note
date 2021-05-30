@@ -1,0 +1,35 @@
+npm install vue-router
+npm install --save vue-router
+yarn add vue-router
+
+npm install axios
+
+yarn add bootstrap jquery popper.js
+npm install --save @popperjs/core
+yarn add @popperjs/core
+
+main.js
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+Bootstrap-vue
+yarn add vue bootstrap-vue bootstrap
+
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+Vue.use(BootstrapVue)
+
+.htaccess
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.html [L]
+
+/config/index.js
+module.exports = {
+    // ...
+    build: {
+      assetsPublicPath: '/',
+      assetsSubDirectory: 'static'
+    }
+}
